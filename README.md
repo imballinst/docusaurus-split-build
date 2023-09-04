@@ -7,7 +7,7 @@ When using Docusaurus multi-docs instance (or multi-versions, or multi-languages
    1. This `BUILD_MODE` is used to determine which docs instance to build. In the process, it's also used to determine some other things, such as `@docusaurus/plugin-content-pages` path, `@docusaurus/plugin-content-docs` array, `@docusaurus/plugin-content-blog`, navigation bar links, and `baseUrl`,
 1. Example of cases:
    1. When `BUILD_MODE=main`, then we include the `docs-main`, blog, `src/pages/main`, and the navigation bar for the `main` doc instance.
-   1. When `BUILD_MODE=arsenal`, then we include the `docs-arsenal`, blog, `src/pages/arsenal`, and the navigation bar for the `arsenal` doc instance.
+   1. When `BUILD_MODE=arsenal`, then we include the `docs-arsenal`, `src/pages/arsenal`, and the navigation bar for the `arsenal` doc instance.
 1. Since they are built differently, then they also emit different sitemap.
    1. For `main` doc instance: https://imballinst.github.io/docusaurus-split-build/sitemap.xml.
    1. For `arsenal` doc instance: https://imballinst.github.io/docusaurus-split-build/arsenal/sitemap.xml.
